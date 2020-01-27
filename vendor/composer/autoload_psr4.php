@@ -12,5 +12,6 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
+    'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'App\\' => array($baseDir . '/src'),
 );
