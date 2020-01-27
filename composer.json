@@ -1,0 +1,10 @@
+{
+    "name": "xavi/framework-valencia",
+    "authors": [
+        {
+            "name": "Xavi",
+            "email": "xavi@geekshubs.com"
+        }
+    ],
+    "require": {}
+}
