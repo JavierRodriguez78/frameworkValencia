@@ -4,8 +4,18 @@
 namespace App;
 
 
+use \DI\Container;
+
 class RouteManager
 {
+
+    private $container;
+
+    public function  __construct(Container $container)
+    {
+        $this->container = $container;
+    }
+
     public function dispatch(string $requestMethod, string $requestUri, \FastRoute\Dispatcher $dispatcher)
     {
         $route = $dispatcher->dispatch($requestMethod, $requestUri);
@@ -17,12 +27,9 @@ class RouteManager
                 break;
 
             case \FastRoute\Dispatcher::FOUND:
-                $data = $route[1];
-                $controller = $data[0];
-                \Kint::dump($data);
-                $action= $data[1];
-                $objController = new $controller();
-                $objController->$action();
+               $controller = $route[1];
+                $action= $route[2];
+                $this->container->call($controller, $action);
                 break;
 
         }
