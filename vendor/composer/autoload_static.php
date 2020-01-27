@@ -9,6 +9,7 @@ class ComposerStaticInit598ec435abcd0fe060939dbe7d6c534b
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -20,6 +21,18 @@ class ComposerStaticInit598ec435abcd0fe060939dbe7d6c534b
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
+        'K' => 
+        array (
+            'Kint\\' => 5,
         ),
         'A' => 
         array (
@@ -39,6 +52,18 @@ class ComposerStaticInit598ec435abcd0fe060939dbe7d6c534b
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Kint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
         'App\\' => 
         array (

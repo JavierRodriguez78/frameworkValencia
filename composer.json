@@ -7,7 +7,9 @@
         }
     ],
     "require": {
-        "twig/twig": "^2.11"
+        "twig/twig": "^2.11",
+        "kint-php/kint": "^3.2",
+        "monolog/monolog": "^1.24"
     },
     "autoload":{
         "psr-4": {
@@ -15,7 +17,7 @@
         }
     },
     "scripts": {
-        "start":"@composer delete-cache && php -S localhost:5001 -t=public",
+        "start":"@composer delete-cache && php -S localhost:5002 -t=public",
         "delete-cache": "if [ -d 'cache/views' ]; then rm -r 'cache/views';fi"
     }
 }
