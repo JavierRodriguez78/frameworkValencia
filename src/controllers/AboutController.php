@@ -6,11 +6,11 @@ namespace App\controllers;
 
 use App\ViewManager;
 
-class AboutController
+class AboutController extends Controller
 {
     public function index()
     {
-        $viewManager = new ViewManager();
-        $viewManager->renderTemplate("about.twig.html");
+
+        $this->viewManager->renderTemplate("about.twig.html");
     }
 }

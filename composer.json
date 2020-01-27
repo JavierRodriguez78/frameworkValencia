@@ -19,7 +19,7 @@
         }
     },
     "scripts": {
-        "start":"@composer delete-cache && php -S localhost:5006 -t=public",
+        "start":"@composer delete-cache && php -S localhost:5008 -t=public",
         "delete-cache": "if [ -d 'cache/views' ]; then rm -r 'cache/views';fi"
     }
 }
