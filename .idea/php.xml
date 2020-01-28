@@ -33,6 +33,7 @@
       <path value="$PROJECT_DIR$/vendor/cakephp/database" />
       <path value="$PROJECT_DIR$/vendor/cakephp/collection" />
       <path value="$PROJECT_DIR$/vendor/cakephp/log" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

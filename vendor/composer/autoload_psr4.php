@@ -28,6 +28,7 @@ return array(
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
     'Invoker\\' => array($vendorDir . '/php-di/invoker/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
+    'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'DI\\' => array($vendorDir . '/php-di/php-di/src'),
     'Cake\\Utility\\' => array($vendorDir . '/cakephp/utility'),
     'Cake\\Log\\' => array($vendorDir . '/cakephp/log'),
