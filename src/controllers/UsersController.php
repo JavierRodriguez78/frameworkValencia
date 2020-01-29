@@ -12,7 +12,7 @@ class UsersController extends ControllerAuth
     public function index()
     {
         $users = $this->doctrineManager->em->getRepository(User::class)->findAll();
-        $this->viewManager->renderTemplate('users.twig.html',['users'=>$users]);
+        $this->viewManager->renderTemplate('users.twig.html',['users'=>$users, 'user'=>$this->user->email]);
 
     }
 }

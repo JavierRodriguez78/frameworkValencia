@@ -15,6 +15,7 @@ abstract class ControllerAuth
     protected $doctrineManager;
     protected $logManager;
     protected $sessionManager;
+    protected $user;
 
     public function __construct(SessionManager $sessionManager, LogManager $logManager, ViewManager $viewManager, DoctrineManager $doctrineManager)
     {
@@ -26,7 +27,7 @@ abstract class ControllerAuth
         $this->logManager->info("Controlador cargado->".get_class($this));
 
         if (!$this->sessionManager->get('user')) return $this->redirectTo('login');
-
+        $this->user = $this->sessionManager->get('user')[0];
     }
 
     public function redirectTo(string $page){
