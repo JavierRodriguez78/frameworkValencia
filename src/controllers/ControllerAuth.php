@@ -9,7 +9,7 @@ use App\SessionManager;
 use App\ViewManager;
 use MongoDB\Driver\Session;
 
-abstract class Controller
+abstract class ControllerAuth
 {
     protected $viewManager;
     protected $doctrineManager;
@@ -24,6 +24,9 @@ abstract class Controller
         $this->sessionManager= $sessionManager;
 
         $this->logManager->info("Controlador cargado->".get_class($this));
+
+        if (!$this->sessionManager->get('user')) return $this->redirectTo('login');
+
     }
 
     public function redirectTo(string $page){

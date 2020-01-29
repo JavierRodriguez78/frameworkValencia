@@ -14,6 +14,7 @@ class Core
 
     public function __construct()
     {
+        session_start();
       $this->container= $this->createContainer();
         $this->logger = $this->container->get(LogManager::class);
 

@@ -6,7 +6,7 @@ namespace App\controllers;
 
 use App\db\entitites\User;
 
-class UsersController extends Controller
+class UsersController extends ControllerAuth
 {
 
     public function index()

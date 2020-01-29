@@ -29,6 +29,8 @@ class LoginController extends Controller
             $this->viewManager->renderTemplate('login.twig.html',['error'=>$this->error]);
         }
 
+        $this->sessionManager->put('user',$user);
+
         $this->redirectTo('users');
 
     }
