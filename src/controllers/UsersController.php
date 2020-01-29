@@ -12,6 +12,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = $this->doctrineManager->em->getRepository(User::class)->findAll();
-        \Kint::dump($users);
+        $this->viewManager->renderTemplate('users.twig.html',['users'=>$users]);
+
     }
 }
